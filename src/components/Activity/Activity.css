@@ -1,0 +1,23 @@
+.activity-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.header{
+    padding-top: 50px;
+    display: flex;
+}
+
+.img{
+    width: 80px;
+    padding-right: 10px;
+}
+
+.works-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}

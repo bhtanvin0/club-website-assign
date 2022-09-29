@@ -2,7 +2,8 @@ import React from 'react';
 import './Work.css'
 
 const Work = (props) => {
-    const{picture, name, Time, about} = props.work;
+    const {handleAddToProfile}=props
+    const{picture, name, Time, about,} = props.work;
     return (
         <div className='work'>
             <img src={picture} alt="" />
@@ -11,7 +12,7 @@ const Work = (props) => {
             <p className='work-about'>{about}</p>
             <h5 className='work-time'>Time required: {Time}s </h5>
             </div>
-            <button onClick={() => props.handleAddToProfile(props.work)} className='btn-cart'>
+            <button onClick={() => handleAddToProfile(Time)} className='btn-cart'>
                 <p>Add to list</p>
             </button>
         </div>

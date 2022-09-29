@@ -20,7 +20,7 @@ const Activity = () => {
 
     const [menits, setmenits] = useState(0)
     const handleAddToProfile = (work) => {
-        const total = menits + work.Time
+        const total = menits + Number(work)
         console.log(total)
         setmenits(total)
     }
